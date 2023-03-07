@@ -18,11 +18,11 @@ jobs:
 
       # 不要忘记先 checkout 代码
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # 调用自动编译脚本，需要 sudo 权限
-      - name: Build
-        run: sudo bash build_action.sh
+      #- name: Build
+      #  run: sudo bash build_action.sh
 
       # 将编译后的产物保留，以供直接通过网页下载
       - name: Artifact
